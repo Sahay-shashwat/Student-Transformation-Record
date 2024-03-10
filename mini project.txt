@@ -1,0 +1,29 @@
+STR
+Add
+Students
+1) Student details- Name, DOB, Gender, religion, nationality, caste, Blood group, Address, contact(phone number, college mail, personal mail), student gradution year, siblings details
+2) Parent/local gaurdian details - Name, contact, occupation, office address
+3) Educational background(10,12/lateral entry) - school, board, CGPA, year of passing, school address
+4) Hobby, goals, previous achievement
+5) Addmission details- year, branch, sem, type of addmission, Change of branch(If applicable),
+6) Career counselling details
+7) Career review details
+8) Club details, professional bodies
+6) Sem -  Mentor Name, marks(Subject name, subject code, IAT marks 3 col, SEE), attendance (Subject name, subject code, attendance percentage 3 col), mini project, mooc details, events attended (Event name, Clubs/College/sports/cultural, date, price recieved(if any)), Backlog (Subject Name, Subject code, Previous marks, New marks)
+7) Final year- Projects, internship
+8) internship (if any)
+9) Placement records (sem number, type, company name, Package)
+10) Higher studies
+11) Entrepreneurship record
+12) Certification course
+
+Mentors
+1) PTM (date, counselling comments, telephone communication)
+2) Career counselling
+3) Student wise PO correlation (Bloom's taxonomy level, remarks)
+4) Final PO mapping
+
+View 
+Everything
+
+Edit - 

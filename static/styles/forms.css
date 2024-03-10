@@ -1,0 +1,107 @@
+#head{
+  text-align: center;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 500px;
+}
+body {
+background-color: #E3F4F4;
+color: #132043;
+font-family: "Inter", sans-serif;
+font-family: "Source Sans Pro", sans-serif;
+}
+
+.required{
+  color: red;
+}
+
+
+form {
+width: 500px;
+margin: 0 auto;
+font-family: Arial, sans-serif;
+}
+
+label {
+display: block;
+margin-top: 20px;
+font-size: 16px;
+font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+width: 100%;
+padding: 10px;
+margin-top: 5px;
+font-size: 16px;
+border: 1px solid #ccc;
+border-radius: 5px;
+box-sizing: border-box;
+}
+
+select {
+appearance: none;
+-webkit-appearance: none;
+-moz-appearance: none;
+background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'><path d='M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z'/></svg>");
+background-repeat: no-repeat;
+background-position: right 10px center;
+background-size: 12px;
+padding-right: 30px;
+}
+
+textarea {
+height: 100px;
+}
+
+.checkbox-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.checkbox-container input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+.checkbox-container label {
+  flex: 1;
+}
+
+
+#submit {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+  text-align: center;
+  position: absolute;
+}
+
+#submit::after{
+  background-color: darkgreen;
+}
+
+#next{
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 50px;
+  text-align: center;
+  position: absolute;
+}
+
+#next::after{
+  background-color: darkgreen;
+}

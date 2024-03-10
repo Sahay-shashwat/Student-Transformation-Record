@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guardian Details</title>
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/forms.css') }}">
+    <script type="text/javascript" href= "{{ url_for('static',filename='javascript/forms.js') }}"></script>
+</head>
+<body>
+    <div id = "head">
+        <h1> ADDMISSION DETAILS </h1>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <hr>    
+    <div>
+        <form onsubmit="submitForm()">
+
+            <label for="addmissionyear">Date of Addmission <span class="required">*</span></label><br>
+            <input type="date" id="addmissionyear" name="addmissionyear" required><br>
+
+            <label for="branch">Branch <span class="required">*</span></label><br>
+            <select id="branch" name="branch" required>
+                <option value="cse">CSE</option>
+                <option value="ise">ISE</option>
+                <option value="ece">ECE</option>
+                <option value="aiml">AIML</option>
+                <option value="aids">AI&DS</option>
+                <option value="csds">CS(DS)</option>
+                <option value="csaiml">CS(AIML)</option>
+            </select><br>
+            
+            <label for="addtype">Type of Addmission <span class="required">*</span></label><br>
+            <select id="addtype" name="addtype" required>
+                <option value="comedk">Comedk</option>
+                <option value="kcet">Kcet</option>
+                <option value="management">Management</option>
+                <option value="foreign">Foreign</option>
+                <option value="jee">JEE mains</option>
+                <option value="snq">SNQ</option>
+                <option value="lateral">Lateral Entry</option>
+            </select><br>
+            
+            <label for="sem">Addmission Semester <span class="required">*</span></label><br>
+            <select id="sem" name="sem" required>
+                <option value="1st">1</option>
+                <option value="3rd">3</option>
+            </select><br>
+            <div>
+                <button type="submit" id="submit">SUBMIT</button><br>
+            </div>
+            <div>
+                    <a class = "links" href="mentor.html"><button class= "one" type = "button" onclick="" id="next"> Next page </button></a>
+            </div>
+            <br>
+            <br>
+        </form>
+        <br>
+    </div>
+</body>
+</html>

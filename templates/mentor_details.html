@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Student Details</title>
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/forms.css') }}">
+    <script type="text/javascript" href= "{{ url_for('static',filename='javascript/forms.js') }}"></script>
+</head>
+<body>
+    <div id = "head">
+        <h1> MENTOR DETAILS </h1>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <hr>
+    <div>
+        <form onsubmit="return submitForm()">
+            <label for="mentor">Mentor Name <span class="required">*</span></label><br>
+            <input type="text" id="mentor" name="mentor" required><br>
+
+            <label for="dept">Mentor's Department <span class="required">*</span></label><br>
+            <input type="text" id="dept" name="dept" required><br>
+
+            <label for="desgn">Mentor's Designation <span class="required">*</span></label><br>
+            <input type="text" id="desgn" name="desgn" required><br>
+
+
+            <div>
+                <button type="submit" id="submit">SUBMIT</button><br>
+            </div>
+            <div>
+                    <a class = "links" href="pagenotfound.html"><button class= "one" type = "button" onclick="" id="next"> Next page </button></a>
+            </div>
+            <br>
+            <br>
+        </form>
+    </div>
+</body>
+</html>

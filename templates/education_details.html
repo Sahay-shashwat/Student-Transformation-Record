@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guardian Details</title>
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/forms.css') }}">
+    <script type="text/javascript" href= "{{ url_for('static',filename='javascript/forms.js') }}"></script>
+</head>
+<body>
+    <div id = "head">
+        <h1> EDUCATIONAL BACKGROUND </h1>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <hr>
+        <form onsubmit="return submitForm()">
+            <h3>10th/ High School</h3>
+            <label for="10schoolname">School Name <span class="required">*</span></label><br>
+            <input type="text" id="10schoolname" name="10schoolname" required><br>
+            
+            <label for="10board">Board <span class="required">*</span></label><br>
+            <select id="10board" name="10board" required>
+                <option value="cbse">CBSE</option>
+                <option value="icse">ISCE</option>
+                <option value="state">State board</option>
+                <option value="ib">International board</option>
+                <option value="nios">NIOS</option>
+            </select><br>
+
+            <label for="10cgpa">CGPA (If Percentages, convert to CGPA) <span class="required">*</span></label><br>
+            <input type="number" step="0.1" min="0" max="10" id="10cgpa" name="10cgpa" required><br>
+
+            <label for="10year">Date of Passing <span class="required">*</span></label><br>
+            <input type="date" id="10year" name="10year" required><br>
+
+            <label for="10address"> School Address <span class="required">*</span></label><br>
+            <textarea id="10address" name="10address" required></textarea><br>
+
+            <hr>
+
+            <h3>12th/ Diploma</h3>
+            <label for="12schoolname">School Name <span class="required">*</span></label><br>
+            <input type="text" id="12schoolname" name="12schoolname" required><br>
+            
+            <label for="12board">Board <span class="required">*</span></label><br>
+            <select id="12board" name="12board" required>
+                <option value="cbse">CBSE</option>
+                <option value="icse">ISCE</option>
+                <option value="state">State board</option>
+                <option value="ib">International board</option>
+                <option value="nios">NIOS</option>
+            </select><br>
+
+            <label for="12cgpa">CGPA (If Percentages, convert to CGPA) <span class="required">*</span></label><br>
+            <input type="number" step="0.1" min="0" max="10" id="12cgpa" name="12cgpa" required><br>
+
+            <label for="12year">Date of Passing <span class="required">*</span></label><br>
+            <input type="date" id="12year" name="12year" required><br>
+
+            <label for="12address"> School Address <span class="required">*</span></label><br>
+            <textarea id="12address" name="12address" required></textarea><br>
+            
+            <div>
+                <button type="submit" id="submit">SUBMIT</button><br>
+            </div>
+            <div>
+                    <a class = "links" href="addmission_details.html"><button class= "one" type = "button" onclick="" id="next"> Next page </button></a>
+            </div>
+            <br>
+            <br>
+        </form>
+        <br>
+    </div>
+</body>
+</html>

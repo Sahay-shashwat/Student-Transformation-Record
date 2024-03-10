@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Student Details</title>
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/forms.css') }}">
+    <!-- <link rel="stylesheet" type="text/css" href = "templates/forms.css"> -->
+    <script type="text/javascript" href= "{{ url_for('static',filename='javascript/forms.js') }}"></script>
+</head>
+<body>
+    <div id = "head">
+        <h1> STUDENT DETAILS </h1>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <hr>
+    <div>
+        <form action='/student_details' method="POST">
+            <label for="fullname">Student Name <span class="required">*</span></label><br>
+            <input type="text" id="fullname" name="fullname" required><br>
+
+            <label for="gender">Gender <span class="required">*</span></label><br>
+            <select id="gender" name="gender" required>
+                <option value="female">Female</option>
+                <option value="Male">Male</option>
+                <option value="Others">Others</option>
+            </select><br>
+
+            <label for="dob">D.O.B <span class="required">*</span></label><br>
+            <input type="date" id="dob" name="dob" required><br>
+
+            <label for="personal_email">Personal Mail ID <span class="required">*</span></label><br>
+            <input type="email" id="personal_email" name="personal_email" required><br>
+
+            <label for="college_email">College Mail ID <span class="required">*</span></label><br>
+            <input type="email" id="college_email" name="college_email" required><br>
+
+            <label for="mobilenumber">Mobile No <span class="required">*</span></label><br>
+            <input type="tel" id="mobilenumber" name="mobilenumber" inputmode="numeric" pattern="[0-9]{10}" required><br>
+
+            <label for="Religion">Religion <span class="required">*</span></label><br>
+            <input type="text" id="Religion" name="Religion" required><br>
+
+            <label for="caste">Caste <span class="required">*</span></label><br>
+            <input type="text" id="caste" name="caste" required><br>
+    
+            <label for="mothertongue">Mother Tongue <span class="required">*</span></label><br>
+            <input type="text" id="mothertongue" name="mothertongue" required><br>
+            
+            <label for="bloodgroup">Blood Group <span class="required">*</span></label><br>
+            <select id="bloodgroup" name="bloodgroup" required>
+                <option value="A+">A+</option>
+                <option value="A-">A-</option>
+                <option value="AB+">AB+</option>
+                <option value="AB-">AB-</option>
+                <option value="B+">B+</option>
+                <option value="B-">B-</option>
+                <option value="O+">O+</option>
+                <option value="O-">O-</option>
+            </select><br>
+
+            <label for="Nationality">Nationality <span class="required">*</span></label><br>
+            <input type="text" id="Nationality" name="Nationality" required><br>
+
+            <label for="address">Current Address <span class="required">*</span></label><br>
+            <textarea id="address" name="address" required></textarea><br> <br>
+
+            <!-- <div class="checkbox-container">
+                <input type="checkbox" id="declarationCheckbox">
+                <label for="declarationCheckbox">
+                  I hereby declare that I have read and considered the conditions of eligibility for the above course, for which I seek admission. I fulfill the eligibility condition and I have furnished above the necessary information in this regards. In the event of any information being found incorrect or misleading my candidature shall be liable to cancellation at any time and I shall not be entitled to get refund of any fee paid to me, In the event of any dispute it shall be resolved through the meditation by the chairmen or a committee constitution. / arbitration act 1940 and its decision shall be binding of all concerned.
+                </label>
+            </div> -->
+            <div>
+                <input type="submit" id="submit"><br>
+            </div>
+            <br>
+            <br>
+        </form>
+    </div>
+</body>
+</html>

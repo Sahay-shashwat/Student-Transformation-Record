@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <title>Guardian Details</title>
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/forms.css') }}">
+    <script type="text/javascript" href= "{{ url_for('static',filename='javascript/forms.js') }}"></script>
+</head>
+<body>
+    <div id = "head">
+        <h1> GUARDIAN DETAILS </h1>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <hr>
+    <div>
+        <form onsubmit="return submitForm()">
+            <label for="fullname">Father's Name </label><br>
+            <input type="text" id="fullname" name="fullname"><br>
+
+            <label for="email">Father's Mail ID </label><br>
+            <input type="email" id="email" name="email"><br>
+
+            <label for="mobilenumber">Father's Mobile No </label><br>
+            <input type="tel" id="mobilenumber" name="mobilenumber" inputmode="numeric" pattern="[0-9]{10}"><br>
+
+            <label for="address">Father's Occupation </label><br>
+            <textarea id="Occupation" name="Occupation"></textarea><br>
+
+            <hr>
+
+            <label for="fullname">Mother's Name </label><br>
+            <input type="text" id="fullname" name="fullname"><br>
+
+            <label for="email">Mother's Mail ID </label><br>
+            <input type="email" id="email" name="email"><br>
+
+            <label for="mobilenumber">Mother's Mobile No </label><br>
+            <input type="tel" id="mobilenumber" name="mobilenumber" inputmode="numeric" pattern="[0-9]{10}"><br>
+
+            <label for="address">Mother's Occupation </label><br>
+            <textarea id="Occupation" name="Occupation"></textarea><br>
+
+            <hr>
+
+            <label for="fullname">Local Guardian's Name </label><br>
+            <input type="text" id="fullname" name="fullname"><br>
+
+            <label for="email">Local Guardian's Mail ID </label><br>
+            <input type="email" id="email" name="email"><br>
+
+            <label for="mobilenumber">Local Guardian's Mobile No </label><br>
+            <input type="tel" id="mobilenumber" name="mobilenumber" inputmode="numeric" pattern="[0-9]{10}"><br>
+
+            <label for="address">Local Guardian's Occupation </label><br>
+            <textarea id="Occupation" name="Occupation"></textarea><br>
+
+            <div>
+                <button type="submit" id="submit">SUBMIT</button><br>
+            </div>
+            <div>
+                    <a class = "links" href="education_details.html"><button class= "one" type = "button" onclick="" id="next"> Next page </button></a>
+            </div>
+            <br>
+            <br>
+        </form>
+        <br>
+    </div>
+</body>
+</html>
