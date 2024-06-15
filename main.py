@@ -3,7 +3,7 @@ from flask import Flask, render_template, request, redirect, url_for, flash
 app = Flask(__name__)
 app.secret_key="STR"
 
-from datab import Database
+from str_db import Database
 
 db=Database()
 
